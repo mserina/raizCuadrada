@@ -1,30 +1,35 @@
-﻿using numeroCuadrado.Servicios;
+﻿
+using numeroCuadrado.Servicios;
 
 namespace numeroCuadrado
 {
     class program
     {
-        static void main(string[] args)
+
+        static void Main(string[] args)
         {
-
+            double raizCuadrada;
             NumeroInterfaz nu = new NumeroImplementacion();
-            string numeroAlmacenado;
-            numeroAlmacenado = nu.solicitudNumero();
-            bool esEntero;
-            
-            esEntero= double.TryParse(numeroAlmacenado, out double numeroAftherConversion);
-
-            if (esEntero)
+            double numero= nu.solicitudNumero();
+            raizCuadrada = Math.Sqrt(numero);
+           
+         
+            if (EsEntero(raizCuadrada))
             {
-                double raizCuadrada;
-                raizCuadrada = Math.Sqrt(numeroAftherConversion);
-                Console.WriteLine("La raiz cuadrada de " + numeroAftherConversion + "es " + raizCuadrada); 
+                Console.WriteLine("La raiz cuadrada es entera, la raiz es: " + raizCuadrada);
             }
             else
             {
-                Console.WriteLine("No se puede calcular la raiz cuadrada con numeros negativos");
+                Console.WriteLine("La raiz no es entero");
             }
-            
+
+            static bool EsEntero(double numero)
+            {
+                return numero % 1 == 0;
+            }
+
+
+
         }
     }
 }

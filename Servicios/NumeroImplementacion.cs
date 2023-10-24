@@ -8,14 +8,16 @@ namespace numeroCuadrado.Servicios
 {
     internal class NumeroImplementacion : NumeroInterfaz
     {
-        public string solicitudNumero()
+        public double  solicitudNumero()
         {
-            string numero;
-            Console.WriteLine("Dame un numero");
-            numero = Console.ReadLine();
+            double  numero;
+            Console.WriteLine("Dame nunmero");
+            numero = double.Parse(Console.ReadLine());
             return numero;
 
         }
+
+        
 
         
     }

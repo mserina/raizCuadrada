@@ -8,7 +8,7 @@ namespace numeroCuadrado.Servicios
 {
     internal interface NumeroInterfaz
     {
-        public string solicitudNumero();
+        public double solicitudNumero();
 
     }
 }
