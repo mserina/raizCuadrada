@@ -1,11 +1,16 @@
-﻿
-using numeroCuadrado.Servicios;
+﻿using numeroCuadrado.Servicios;
 
 namespace numeroCuadrado
 {
+    /// <summary>
+    /// Clase principal,almacena el metodo main
+    /// </summary>
     class program
     {
-
+        /// <summary>
+        /// Metodo main, que da inicio al programa y dicta el procedimiento de la aplicacion 
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             double raizCuadrada;

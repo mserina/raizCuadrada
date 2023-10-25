@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace numeroCuadrado.Servicios
 {
+    /// <summary>
+    /// Clase que contiene la logica de los metodos 
+    /// msm - 251023
+    /// </summary>
     internal class NumeroImplementacion : NumeroInterfaz
     {
         public double  solicitudNumero()
